@@ -29,7 +29,7 @@ body {
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .docs-nav-inner {
-  height: 100%; max-width: 1280px; margin: 0 auto;
+  height: 100%; width: 100%;
   padding: 0 clamp(16px,4vw,48px);
   display: flex; align-items: center; gap: 8px;
 }
@@ -109,7 +109,7 @@ body {
 .theme-swatches span { height: 3px; width: 24px; border-radius: 2px; }
 
 /* ── Page layout ── */
-.docs-page { max-width: 1280px; margin: 0 auto; padding: clamp(32px,5vw,72px) clamp(16px,4vw,48px); position: relative; z-index: 1; }
+.docs-page { width: 100%; padding: clamp(32px,5vw,72px) clamp(16px,4vw,48px); position: relative; z-index: 1; }
 .docs-section { margin-bottom: 64px; }
 .docs-section-title { font-size: 8px; font-weight: 900; letter-spacing: 0.30em; text-transform: uppercase; color: var(--hxrrrrri-a1, #FF4D2D); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); }
 .docs-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
@@ -136,7 +136,7 @@ body {
 
 /* ── Min page wrapper ── */
 .min-page-bg { background: #F5F4F1; min-height: calc(100vh - 62px); }
-.min-page-content { max-width: 1280px; margin: 0 auto; padding: clamp(32px,5vw,64px) clamp(16px,4vw,48px); }
+.min-page-content { width: 100%; padding: clamp(32px,5vw,64px) clamp(16px,4vw,48px); }
 .min-section { margin-bottom: 56px; }
 .min-section-label { font-size: 8px; font-weight: 900; letter-spacing: 0.30em; text-transform: uppercase; color: #9B9B98; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid #E5E4E0; }
 .min-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
