@@ -1,15 +1,15 @@
 /**
- * MRK-UI Component Library
+ * hxrrrrri-UI Component Library
  * Ultra Luxury Glass + Ultra Minimal systems
  *
  * Usage:
- *   import { applyTheme, THEMES } from 'mrk-ui'
- *   import 'mrk-ui/dist/mrk-ui.css'
+ *   import { applyTheme, THEMES } from 'hxrrrrri-ui'
+ *   import 'hxrrrrri-ui/dist/hxrrrrri-ui.css'
  *
  * Or import individual CSS files:
- *   import 'mrk-ui/src/styles/tokens.css'
- *   import 'mrk-ui/src/styles/luxury.css'
- *   import 'mrk-ui/src/styles/minimal.css'
+ *   import 'hxrrrrri-ui/src/styles/tokens.css'
+ *   import 'hxrrrrri-ui/src/styles/luxury.css'
+ *   import 'hxrrrrri-ui/src/styles/minimal.css'
  *
  * Then use class names directly:
  *   <button className="lux-btn lux-btn-primary">Primary</button>

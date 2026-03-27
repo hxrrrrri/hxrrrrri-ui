@@ -40,7 +40,7 @@ function NavBar() {
   return (
     <header className="docs-nav">
       <div className="docs-nav-inner">
-        <Link to="/" className="docs-logo">MRK-UI</Link>
+        <Link to="/" className="docs-logo">hxrrrrri-UI</Link>
         <nav className="docs-links">
           {links.map(({ to, label }) => (
             <Link key={to} to={to} className={`docs-link${pathname === to || (to !== '/' && pathname.startsWith(to)) ? ' active' : ''}`}>{label}</Link>

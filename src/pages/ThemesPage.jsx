@@ -61,8 +61,8 @@ export default function ThemesPage() {
           <span className="v">applyTheme</span>({'{'}{'\n'}
           {'  '}<span className="k">id</span>: <span className="s">'myTheme'</span>,{'\n'}
           {'  '}<span className="k">vars</span>: {'{'}{'\n'}
-          {'    '}<span className="s">'--mrk-a1'</span>: <span className="s">'#FF0080'</span>,{'\n'}
-          {'    '}<span className="s">'--mrk-ar'</span>: <span className="s">'255'</span>, <span className="s">'--mrk-ag'</span>: <span className="s">'0'</span>, <span className="s">'--mrk-ab'</span>: <span className="s">'128'</span>,{'\n'}
+          {'    '}<span className="s">'--hxrrrrri-a1'</span>: <span className="s">'#FF0080'</span>,{'\n'}
+          {'    '}<span className="s">'--hxrrrrri-ar'</span>: <span className="s">'255'</span>, <span className="s">'--hxrrrrri-ag'</span>: <span className="s">'0'</span>, <span className="s">'--hxrrrrri-ab'</span>: <span className="s">'128'</span>,{'\n'}
           {'    '}<span className="c">// ... bg layers, orbs</span>{'\n'}
           {'  '}{'}'}{'\n'}
           {'})'}{'\n\n'}
@@ -78,10 +78,10 @@ export default function ThemesPage() {
           <div className="lux-g1 lux-hi" style={{padding:'22px',borderRadius:'18px'}}>
             <div style={{fontSize:'10px',fontWeight:700,color:'rgba(255,255,255,0.40)',letterSpacing:'0.14em',textTransform:'uppercase',marginBottom:'14px'}}>Accent Variables</div>
             {[
-              ['--mrk-a1','Primary accent hex'],
-              ['--mrk-a2','Secondary accent hex'],
-              ['--mrk-ar / --mrk-ag / --mrk-ab','Primary RGB components'],
-              ['--mrk-br / --mrk-bg-c / --mrk-bb','Secondary RGB components'],
+              ['--hxrrrrri-a1','Primary accent hex'],
+              ['--hxrrrrri-a2','Secondary accent hex'],
+              ['--hxrrrrri-ar / --hxrrrrri-ag / --hxrrrrri-ab','Primary RGB components'],
+              ['--hxrrrrri-br / --hxrrrrri-bg-c / --hxrrrrri-bb','Secondary RGB components'],
             ].map(([k,v])=>(
               <div key={k} style={{display:'flex',justifyContent:'space-between',gap:'16px',marginBottom:'10px',borderBottom:'1px solid rgba(255,255,255,0.04)',paddingBottom:'10px'}}>
                 <code style={{fontSize:'11px',fontWeight:700,color:'rgba(255,107,71,0.85)',fontFamily:'monospace'}}>{k}</code>
@@ -92,11 +92,11 @@ export default function ThemesPage() {
           <div className="lux-g1 lux-hi" style={{padding:'22px',borderRadius:'18px'}}>
             <div style={{fontSize:'10px',fontWeight:700,color:'rgba(255,255,255,0.40)',letterSpacing:'0.14em',textTransform:'uppercase',marginBottom:'14px'}}>Background Variables</div>
             {[
-              ['--mrk-bg-l1','Primary radial gradient layer'],
-              ['--mrk-bg-l2','Secondary radial gradient layer'],
-              ['--mrk-bg-l3','Accent glow layer'],
-              ['--mrk-bg-d1 – d4','Dark base gradient stops'],
-              ['--mrk-orb1 / orb2 / orb3','Ambient orb colours'],
+              ['--hxrrrrri-bg-l1','Primary radial gradient layer'],
+              ['--hxrrrrri-bg-l2','Secondary radial gradient layer'],
+              ['--hxrrrrri-bg-l3','Accent glow layer'],
+              ['--hxrrrrri-bg-d1 – d4','Dark base gradient stops'],
+              ['--hxrrrrri-orb1 / orb2 / orb3','Ambient orb colours'],
             ].map(([k,v])=>(
               <div key={k} style={{display:'flex',justifyContent:'space-between',gap:'16px',marginBottom:'10px',borderBottom:'1px solid rgba(255,255,255,0.04)',paddingBottom:'10px'}}>
                 <code style={{fontSize:'11px',fontWeight:700,color:'rgba(79,195,247,0.85)',fontFamily:'monospace'}}>{k}</code>

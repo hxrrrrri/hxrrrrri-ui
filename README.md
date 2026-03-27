@@ -1,4 +1,4 @@
-# MRK-UI — Ultra Luxury Glass + Ultra Minimal
+# hxrrrrri-UI — Ultra Luxury Glass + Ultra Minimal
 
 A premium React component library by **Harisankar S (MR.K)** with two complete design systems.
 
@@ -49,12 +49,12 @@ applyTheme('obsidian')  // Burnt ember · Midnight indigo (default)
 ## CSS Variable System (Luxury)
 
 Set these in `:root` to customise any theme:
-- `--mrk-a1` — Primary accent colour
-- `--mrk-ar / --mrk-ag / --mrk-ab` — Primary RGB components
-- `--mrk-a2` — Secondary accent colour  
-- `--mrk-br / --mrk-bg-c / --mrk-bb` — Secondary RGB components
-- `--mrk-bg-l1/l2/l3` — Background gradient layers
-- `--mrk-orb1/2/3` — Ambient orb colours
+- `--hxrrrrri-a1` — Primary accent colour
+- `--hxrrrrri-ar / --hxrrrrri-ag / --hxrrrrri-ab` — Primary RGB components
+- `--hxrrrrri-a2` — Secondary accent colour  
+- `--hxrrrrri-br / --hxrrrrri-bg-c / --hxrrrrri-bb` — Secondary RGB components
+- `--hxrrrrri-bg-l1/l2/l3` — Background gradient layers
+- `--hxrrrrri-orb1/2/3` — Ambient orb colours
 
 ## Component Classes
 

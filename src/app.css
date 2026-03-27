@@ -5,21 +5,21 @@ body {
   font-family: 'DM Sans', system-ui, sans-serif;
   overflow-x: hidden;
   background:
-    radial-gradient(ellipse 100% 60% at 10% 0%,  var(--mrk-bg-l1,rgba(255,77,45,0.16)) 0%, transparent 55%),
-    radial-gradient(ellipse 80%  65% at 92% 92%, var(--mrk-bg-l2,rgba(40,40,200,0.18)) 0%, transparent 52%),
-    radial-gradient(ellipse 55%  45% at 58% 32%, var(--mrk-bg-l3,rgba(255,140,30,0.05)) 0%, transparent 50%),
-    linear-gradient(168deg, var(--mrk-bg-d1,#080710) 0%, var(--mrk-bg-d2,#0a0820) 45%, var(--mrk-bg-d3,#0c091c) 75%, var(--mrk-bg-d4,#07080e) 100%);
+    radial-gradient(ellipse 100% 60% at 10% 0%,  var(--hxrrrrri-bg-l1,rgba(255,77,45,0.16)) 0%, transparent 55%),
+    radial-gradient(ellipse 80%  65% at 92% 92%, var(--hxrrrrri-bg-l2,rgba(40,40,200,0.18)) 0%, transparent 52%),
+    radial-gradient(ellipse 55%  45% at 58% 32%, var(--hxrrrrri-bg-l3,rgba(255,140,30,0.05)) 0%, transparent 50%),
+    linear-gradient(168deg, var(--hxrrrrri-bg-d1,#080710) 0%, var(--hxrrrrri-bg-d2,#0a0820) 45%, var(--hxrrrrri-bg-d3,#0c091c) 75%, var(--hxrrrrri-bg-d4,#07080e) 100%);
   background-attachment: fixed;
   min-height: 100vh;
   color: rgba(255,255,255,0.90);
   transition: background 0.8s cubic-bezier(0.16,1,0.3,1);
 }
 
-::selection { background: rgba(var(--mrk-ar,255),var(--mrk-ag,77),var(--mrk-ab,45),0.28); color: #fff; }
+::selection { background: rgba(var(--hxrrrrri-ar,255),var(--hxrrrrri-ag,77),var(--hxrrrrri-ab,45),0.28); color: #fff; }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.09); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(var(--mrk-ar,255),var(--mrk-ag,77),var(--mrk-ab,45),0.5); }
+::-webkit-scrollbar-thumb:hover { background: rgba(var(--hxrrrrri-ar,255),var(--hxrrrrri-ag,77),var(--hxrrrrri-ab,45),0.5); }
 
 /* ── Docs Nav ── */
 .docs-nav {
@@ -111,7 +111,7 @@ body {
 /* ── Page layout ── */
 .docs-page { max-width: 1280px; margin: 0 auto; padding: clamp(32px,5vw,72px) clamp(16px,4vw,48px); position: relative; z-index: 1; }
 .docs-section { margin-bottom: 64px; }
-.docs-section-title { font-size: 8px; font-weight: 900; letter-spacing: 0.30em; text-transform: uppercase; color: var(--mrk-a1, #FF4D2D); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.docs-section-title { font-size: 8px; font-weight: 900; letter-spacing: 0.30em; text-transform: uppercase; color: var(--hxrrrrri-a1, #FF4D2D); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); }
 .docs-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
 .docs-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .docs-grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }

@@ -112,7 +112,7 @@ export default function LuxuryDocs() {
             <div key={s.n} style={{marginBottom:'14px'}}>
               <div style={{display:'flex',justifyContent:'space-between',marginBottom:'6px'}}>
                 <span style={{fontSize:'11px',fontWeight:600,color:'rgba(255,255,255,0.65)'}}>{s.n}</span>
-                <span style={{fontSize:'10px',fontWeight:800,color:s.c||'var(--mrk-a1)'}}>{s.p}%</span>
+                <span style={{fontSize:'10px',fontWeight:800,color:s.c||'var(--hxrrrrri-a1)'}}>{s.p}%</span>
               </div>
               <div className="lux-progress-track">
                 <div className="lux-progress-fill" style={{width:`${s.p}%`,background:s.c?`linear-gradient(90deg,${s.c},${s.c}88)`:undefined,boxShadow:s.c?`0 0 8px ${s.c}66`:undefined}}/>
@@ -226,13 +226,13 @@ export default function LuxuryDocs() {
       {/* Steps */}
       <Section title="11 / Steps" code={`<span class="k">&lt;div</span> <span class="s">className</span>=<span class="v">"lux-step-row"</span><span class="k">&gt;</span>\n  <span class="k">&lt;div</span> <span class="s">className</span>=<span class="v">"lux-step-num done"</span><span class="k">&gt;</span>1<span class="k">&lt;/div&gt;</span>\n  ...\n<span class="k">&lt;/div&gt;</span>`}>
         <div className="lux-g1 lux-hi" style={{padding:'24px',borderRadius:'18px',maxWidth:'360px'}}>
-          {[{n:1,t:'Fork the repo',s:'github.com/hxrrrrri',done:true},{n:2,t:'Copy CSS files',s:'tokens + luxury + minimal',done:true},{n:3,t:'Set your theme',s:'--mrk-a1, --mrk-ar/ag/ab',done:false}].map((st,i)=>(
+          {[{n:1,t:'Fork the repo',s:'github.com/hxrrrrri',done:true},{n:2,t:'Copy CSS files',s:'tokens + luxury + minimal',done:true},{n:3,t:'Set your theme',s:'--hxrrrrri-a1, --hxrrrrri-ar/ag/ab',done:false}].map((st,i)=>(
             <div key={i}>
               <div className="lux-step-row">
                 <div className={`lux-step-num${st.done?' done':''}`}>{st.n}</div>
                 <div><div style={{fontSize:'12px',fontWeight:700,color:st.done?'rgba(255,255,255,0.85)':'rgba(255,255,255,0.45)',marginBottom:'2px'}}>{st.t}</div><div style={{fontSize:'11px',color:'rgba(255,255,255,0.32)'}}>{st.s}</div></div>
               </div>
-              {i<2&&<div style={{width:'1px',height:'16px',background:'rgba(var(--mrk-ar),var(--mrk-ag),var(--mrk-ab),0.20)',margin:'0 14px 12px 14px'}}/>}
+              {i<2&&<div style={{width:'1px',height:'16px',background:'rgba(var(--hxrrrrri-ar),var(--hxrrrrri-ag),var(--hxrrrrri-ab),0.20)',margin:'0 14px 12px 14px'}}/>}
             </div>
           ))}
         </div>
@@ -246,7 +246,7 @@ export default function LuxuryDocs() {
           <span style={{fontSize:'9px',fontWeight:800,letterSpacing:'0.22em',textTransform:'uppercase',color:'rgba(255,255,255,0.25)',whiteSpace:'nowrap'}}>or continue with</span>
           <span style={{flex:1,height:'1px',background:'rgba(255,255,255,0.07)'}}/>
         </div>
-        <div style={{height:'1px',background:`linear-gradient(90deg,var(--mrk-a1),var(--mrk-a2))`,margin:'16px 0',borderRadius:'2px'}}/>
+        <div style={{height:'1px',background:`linear-gradient(90deg,var(--hxrrrrri-a1),var(--hxrrrrri-a2))`,margin:'16px 0',borderRadius:'2px'}}/>
       </Section>
 
       {/* Footer */}

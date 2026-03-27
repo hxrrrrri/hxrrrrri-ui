@@ -1,69 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..900;1,9..40,300..900&family=DM+Serif+Display:ital@0;1&display=swap');
 
 /* ═══════════════════════════════════════════════════════════════
-   MRK-UI · Design Tokens
+   hxrrrrri-UI · Design Tokens
    Two systems: .lux-* (Luxury Glass) and .min-* (Ultra Minimal)
    Theme the Luxury system by setting CSS variables on :root
 ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Luxury accent — swap these to change entire theme ── */
-  --mrk-a1: #FF4D2D;
-  --mrk-a2: #5555D8;
-  --mrk-ar: 255; --mrk-ag: 77; --mrk-ab: 45;
-  --mrk-br: 85;  --mrk-bg-c: 85; --mrk-bb: 216;
+  --hxrrrrri-a1: #FF4D2D;
+  --hxrrrrri-a2: #5555D8;
+  --hxrrrrri-ar: 255; --hxrrrrri-ag: 77; --hxrrrrri-ab: 45;
+  --hxrrrrri-br: 85;  --hxrrrrri-bg-c: 85; --hxrrrrri-bb: 216;
 
   /* ── Luxury bg layers ── */
-  --mrk-bg-l1: rgba(255,77,45,0.16);
-  --mrk-bg-l2: rgba(40,40,200,0.18);
-  --mrk-bg-l3: rgba(255,140,30,0.05);
-  --mrk-bg-d1: #080710; --mrk-bg-d2: #0a0820;
-  --mrk-bg-d3: #0c091c; --mrk-bg-d4: #07080e;
-  --mrk-orb1: rgba(255,77,45,0.13);
-  --mrk-orb2: rgba(40,40,200,0.16);
-  --mrk-orb3: rgba(255,140,30,0.05);
+  --hxrrrrri-bg-l1: rgba(255,77,45,0.16);
+  --hxrrrrri-bg-l2: rgba(40,40,200,0.18);
+  --hxrrrrri-bg-l3: rgba(255,140,30,0.05);
+  --hxrrrrri-bg-d1: #080710; --hxrrrrri-bg-d2: #0a0820;
+  --hxrrrrri-bg-d3: #0c091c; --hxrrrrri-bg-d4: #07080e;
+  --hxrrrrri-orb1: rgba(255,77,45,0.13);
+  --hxrrrrri-orb2: rgba(40,40,200,0.16);
+  --hxrrrrri-orb3: rgba(255,140,30,0.05);
 
   /* ── Luxury glass tiers ── */
-  --mrk-g1: rgba(255,255,255,0.045);
-  --mrk-g2: rgba(255,255,255,0.085);
-  --mrk-g3: rgba(255,255,255,0.14);
-  --mrk-g4: rgba(255,255,255,0.20);
-  --mrk-b0: rgba(255,255,255,0.055);
-  --mrk-b1: rgba(255,255,255,0.11);
-  --mrk-b2: rgba(255,255,255,0.20);
-  --mrk-b3: rgba(255,255,255,0.32);
-  --mrk-t1: rgba(255,255,255,0.97);
-  --mrk-t2: rgba(255,255,255,0.62);
-  --mrk-t3: rgba(255,255,255,0.35);
-  --mrk-t4: rgba(255,255,255,0.18);
+  --hxrrrrri-g1: rgba(255,255,255,0.045);
+  --hxrrrrri-g2: rgba(255,255,255,0.085);
+  --hxrrrrri-g3: rgba(255,255,255,0.14);
+  --hxrrrrri-g4: rgba(255,255,255,0.20);
+  --hxrrrrri-b0: rgba(255,255,255,0.055);
+  --hxrrrrri-b1: rgba(255,255,255,0.11);
+  --hxrrrrri-b2: rgba(255,255,255,0.20);
+  --hxrrrrri-b3: rgba(255,255,255,0.32);
+  --hxrrrrri-t1: rgba(255,255,255,0.97);
+  --hxrrrrri-t2: rgba(255,255,255,0.62);
+  --hxrrrrri-t3: rgba(255,255,255,0.35);
+  --hxrrrrri-t4: rgba(255,255,255,0.18);
 
   /* ── Minimal tokens ── */
-  --mrk-min-bg: #F5F4F1;
-  --mrk-min-surface: #FFFFFF;
-  --mrk-min-border: #E5E4E0;
-  --mrk-min-border-dark: #D4D3CE;
-  --mrk-min-t1: #0D0D0C;
-  --mrk-min-t2: #6B6B68;
-  --mrk-min-t3: #9B9B98;
-  --mrk-min-t4: #B0B0AC;
-  --mrk-min-acc: #0D0D0C;
+  --hxrrrrri-min-bg: #F5F4F1;
+  --hxrrrrri-min-surface: #FFFFFF;
+  --hxrrrrri-min-border: #E5E4E0;
+  --hxrrrrri-min-border-dark: #D4D3CE;
+  --hxrrrrri-min-t1: #0D0D0C;
+  --hxrrrrri-min-t2: #6B6B68;
+  --hxrrrrri-min-t3: #9B9B98;
+  --hxrrrrri-min-t4: #B0B0AC;
+  --hxrrrrri-min-acc: #0D0D0C;
 
   /* ── Easing ── */
-  --mrk-ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --mrk-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --hxrrrrri-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --hxrrrrri-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* ── Radius ── */
-  --mrk-r-sm: 8px;
-  --mrk-r-md: 12px;
-  --mrk-r-lg: 18px;
-  --mrk-r-xl: 24px;
-  --mrk-r-2xl: 32px;
+  --hxrrrrri-r-sm: 8px;
+  --hxrrrrri-r-md: 12px;
+  --hxrrrrri-r-lg: 18px;
+  --hxrrrrri-r-xl: 24px;
+  --hxrrrrri-r-2xl: 32px;
 }
 
 /* ── Keyframes ── */
-@keyframes mrk-spin   { to { transform: rotate(360deg); } }
-@keyframes mrk-pulse  { 0%,100%{box-shadow:0 0 0 0 rgba(var(--mrk-ar),var(--mrk-ag),var(--mrk-ab),0.5)} 70%{box-shadow:0 0 0 12px rgba(var(--mrk-ar),var(--mrk-ag),var(--mrk-ab),0)} }
-@keyframes mrk-blink  { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.25;transform:scale(.75)} }
-@keyframes mrk-dots   { 0%,80%,100%{transform:scale(.4);opacity:.3} 40%{transform:scale(1);opacity:1} }
-@keyframes mrk-bar    { 0%{left:-40%} 100%{left:110%} }
-@keyframes mrk-marquee{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
-@keyframes mrk-float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+@keyframes hxrrrrri-spin   { to { transform: rotate(360deg); } }
+@keyframes hxrrrrri-pulse  { 0%,100%{box-shadow:0 0 0 0 rgba(var(--hxrrrrri-ar),var(--hxrrrrri-ag),var(--hxrrrrri-ab),0.5)} 70%{box-shadow:0 0 0 12px rgba(var(--hxrrrrri-ar),var(--hxrrrrri-ag),var(--hxrrrrri-ab),0)} }
+@keyframes hxrrrrri-blink  { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.25;transform:scale(.75)} }
+@keyframes hxrrrrri-dots   { 0%,80%,100%{transform:scale(.4);opacity:.3} 40%{transform:scale(1);opacity:1} }
+@keyframes hxrrrrri-bar    { 0%{left:-40%} 100%{left:110%} }
+@keyframes hxrrrrri-marquee{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes hxrrrrri-float  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }

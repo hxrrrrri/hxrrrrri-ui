@@ -10,11 +10,11 @@ export default function LandingPage() {
       {/* Hero */}
       <div style={{marginBottom:'88px',maxWidth:'720px'}}>
         <div style={{display:'inline-flex',alignItems:'center',gap:'8px',padding:'5px 14px',borderRadius:'999px',background:'rgba(255,255,255,0.045)',border:'1px solid rgba(255,255,255,0.09)',marginBottom:'28px'}}>
-          <span style={{width:'5px',height:'5px',borderRadius:'50%',background:'var(--mrk-a1)',boxShadow:'0 0 8px var(--mrk-a1)',flexShrink:0}}/>
+          <span style={{width:'5px',height:'5px',borderRadius:'50%',background:'var(--hxrrrrri-a1)',boxShadow:'0 0 8px var(--hxrrrrri-a1)',flexShrink:0}}/>
           <span style={{fontSize:'10px',fontWeight:700,letterSpacing:'0.22em',textTransform:'uppercase',color:'rgba(255,255,255,0.45)'}}>by Harisankar S — MR.K</span>
         </div>
         <h1 style={{fontSize:'clamp(3rem,8vw,7rem)',fontWeight:900,lineHeight:0.88,letterSpacing:'-0.046em',color:'#fff',marginBottom:'24px'}}>
-          MRK-UI<span style={{color:'var(--mrk-a1)'}}>.</span>
+          hxrrrrri-UI<span style={{color:'var(--hxrrrrri-a1)'}}>.</span>
         </h1>
         <p style={{fontSize:'18px',lineHeight:1.7,color:'rgba(255,255,255,0.50)',maxWidth:'560px',marginBottom:'36px',fontWeight:400}}>
           Two complete React component systems. Ultra Luxury Glass — Apple Vision Pro–grade glassmorphism. Ultra Minimal — ink on paper precision. Copy the CSS, use the class names, ship in minutes.
@@ -29,7 +29,7 @@ export default function LandingPage() {
       {/* Feature cards */}
       <div className="docs-grid-3" style={{marginBottom:'80px'}}>
         <div className="lux-g2 lux-hi2 lux-shine" style={{padding:'32px',borderRadius:'24px',position:'relative',overflow:'hidden'}}>
-          <div style={{position:'absolute',top:0,right:0,width:'160px',height:'160px',background:'radial-gradient(circle at 80% 20%,rgba(var(--mrk-ar),var(--mrk-ag),var(--mrk-ab),0.07),transparent 65%)',pointerEvents:'none'}}/>
+          <div style={{position:'absolute',top:0,right:0,width:'160px',height:'160px',background:'radial-gradient(circle at 80% 20%,rgba(var(--hxrrrrri-ar),var(--hxrrrrri-ag),var(--hxrrrrri-ab),0.07),transparent 65%)',pointerEvents:'none'}}/>
           <div className="lux-text-label" style={{marginBottom:'14px'}}>Luxury Glass</div>
           <h2 style={{fontSize:'22px',fontWeight:900,lineHeight:1.1,color:'#fff',marginBottom:'12px'}}>Apple Vision Pro<br/>Glass System</h2>
           <p style={{fontSize:'13px',color:'rgba(255,255,255,0.45)',lineHeight:1.72,marginBottom:'20px'}}>5 glass tiers, inset highlight effects, backdrop blur, ambient orbs, 10 live themes. Every component responds to one CSS variable change.</p>
@@ -38,7 +38,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="lux-g2 lux-hi2 lux-shine" style={{padding:'32px',borderRadius:'24px',position:'relative',overflow:'hidden'}}>
-          <div style={{position:'absolute',bottom:0,left:0,width:'160px',height:'160px',background:'radial-gradient(circle at 20% 80%,rgba(var(--mrk-br),var(--mrk-bg-c),var(--mrk-bb),0.06),transparent 65%)',pointerEvents:'none'}}/>
+          <div style={{position:'absolute',bottom:0,left:0,width:'160px',height:'160px',background:'radial-gradient(circle at 20% 80%,rgba(var(--hxrrrrri-br),var(--hxrrrrri-bg-c),var(--hxrrrrri-bb),0.06),transparent 65%)',pointerEvents:'none'}}/>
           <div className="lux-text-label" style={{marginBottom:'14px'}}>Minimal</div>
           <h2 style={{fontSize:'22px',fontWeight:900,lineHeight:1.1,color:'#fff',marginBottom:'12px'}}>Ink on Paper<br/>Precision</h2>
           <p style={{fontSize:'13px',color:'rgba(255,255,255,0.45)',lineHeight:1.72,marginBottom:'20px'}}>Zero gradients. Zero shadows. Pure typography and spacing hierarchy. Inspired by Swiss grid design and editorial print.</p>
@@ -107,7 +107,7 @@ export default function LandingPage() {
       {/* Footer */}
       <div className="lux-footer">
         <div>
-          <div style={{fontWeight:900,fontSize:'16px',letterSpacing:'-0.04em',background:'linear-gradient(135deg,#fff,rgba(255,255,255,0.55))'  ,WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>MRK-UI</div>
+          <div style={{fontWeight:900,fontSize:'16px',letterSpacing:'-0.04em',background:'linear-gradient(135deg,#fff,rgba(255,255,255,0.55))'  ,WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent'}}>hxrrrrri-UI</div>
           <div style={{fontSize:'10px',color:'rgba(255,255,255,0.20)',marginTop:'3px',letterSpacing:'0.12em',textTransform:'uppercase'}}>By Harisankar S — hxrrrrri</div>
         </div>
         <div style={{display:'flex',gap:'20px'}}>
