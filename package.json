@@ -1,6 +1,6 @@
 {
   "name": "hxrrrrri-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra Luxury Glass + Ultra Minimal React component library by Harisankar S (MR.K)",
   "type": "module",
   "main": "./dist/index.cjs",
