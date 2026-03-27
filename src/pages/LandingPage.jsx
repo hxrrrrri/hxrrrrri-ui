@@ -62,24 +62,27 @@ export default function LandingPage() {
         <div className="lux-text-label" style={{marginBottom:'22px'}}>Quick Start</div>
         <div className="docs-grid-2">
           <div>
-            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>1. Install with npm (or npm + npx project init)</div>
+            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>1. Install in your app folder (choose one source)</div>
             <div className="docs-code">
               <span className="c"># If you need a fresh app</span>{'\n'}
               <span className="k">npx</span> <span className="s">create-vite@latest my-app -- --template react</span>{'\n'}
               <span className="k">cd</span> <span className="s">my-app</span>{'\n\n'}
-              <span className="c"># Install HXRRRRRI UI + motion engine</span>{'\n'}
+              <span className="c"># npm registry (recommended)</span>{'\n'}
               <span className="k">npm</span> <span className="s">install hxrrrrri-ui framer-motion</span>{'\n\n'}
-              <span className="c"># If package is private, use GitHub source</span>{'\n'}
-              <span className="k">npm</span> <span className="s">install github:hxrrrrri/hxrrrrri-ui</span>
+              <span className="c"># GitHub source fallback</span>{'\n'}
+              <span className="k">npm</span> <span className="s">install github:hxrrrrri/hxrrrrri-ui</span>{'\n\n'}
+              <span className="c"># GitHub Packages (scoped)</span>{'\n'}
+              <span className="k">npm</span> <span className="s">install @hxrrrrri/hxrrrrri-ui --registry=https://npm.pkg.github.com</span>
             </div>
           </div>
           <div>
-            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>2. Import and use in your page</div>
+            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>2. Import once and start using components</div>
             <div className="docs-code">
-              <span className="k">import</span> {'{ '}<span className="v">ThemeProvider, HxButton, HxCard</span>{' }'} <span className="k">from</span> <span className="s">'hxrrrrri-ui'</span>{'\n'}
+              <span className="k">import</span> {'{ '}<span className="v">ThemeProvider, HxButton, HxCard, HxInput</span>{' }'} <span className="k">from</span> <span className="s">'hxrrrrri-ui'</span>{'\n'}
               <span className="k">import</span> <span className="s">'hxrrrrri-ui/style.css'</span>{'\n\n'}
               <span className="s">&lt;ThemeProvider&gt;</span>{'\n'}
               {'  '}<span className="s">&lt;HxCard system="luxury" tilt&gt;</span>{'\n'}
+              {'    '}<span className="s">&lt;HxInput system="luxury" placeholder="Your email" /&gt;</span>{'\n'}
               {'    '}<span className="s">&lt;HxButton system="luxury" variant="gradient"&gt;Launch&lt;/HxButton&gt;</span>{'\n'}
               {'  '}<span className="s">&lt;/HxCard&gt;</span>{'\n'}
               <span className="s">&lt;/ThemeProvider&gt;</span>
