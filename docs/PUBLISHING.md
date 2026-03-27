@@ -53,6 +53,19 @@ npm publish --access public
 git push origin HEAD --follow-tags
 ```
 
+## 4.1) GitHub Actions release flow (recommended)
+
+If you prefer releasing from GitHub UI:
+
+1. Run workflow `Manual Version Bump` from the Actions tab.
+2. Select `patch`, `minor`, or `major`.
+3. After it pushes the version commit + tag, run workflow `Manual npm Publish`.
+4. Choose branch `main`/`master` and dist-tag (`latest`, `next`, etc.).
+
+Required secret:
+
+- `NPM_TOKEN` in repository Actions secrets.
+
 ## 5) Consumer install commands
 
 Registry install:
