@@ -148,3 +148,9 @@ body {
 }
 .min-code { background: #0D0D0C; padding: 18px 20px; font-family: 'DM Mono','Fira Code',monospace; font-size: 12px; color: #6B6B68; line-height: 1.75; margin-top: 14px; overflow-x: auto; }
 .min-code .k { color: #C8860A; } .min-code .s { color: #FAFAF9; } .min-code .c { color: #444440; }
+
+/* HxButton loading dots */
+@keyframes hx-dot {
+  0%, 80%, 100% { transform: scale(0.4); opacity: 0.3; }
+  40%           { transform: scale(1);   opacity: 1;   }
+}

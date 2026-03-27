@@ -1,23 +1,70 @@
+/* ═══════════════════════════════════════════════════════════════════
+   HXRRRRRI-UI · Base Classes
+   Utilities applied to every component via className composition.
+═══════════════════════════════════════════════════════════════════ */
+
+/* ── Reset ── */
 .hx-root {
-  font-family: 'Space Grotesk', 'Sora', system-ui, sans-serif;
+  font-family: var(--hx-font-sans);
   color: var(--hx-text);
-  background: var(--hx-bg);
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.hx-root *, .hx-root *::before, .hx-root *::after {
+  box-sizing: inherit;
 }
 
+/* ── Surface ── */
 .hx-surface {
   background: var(--hx-surface);
   border: 1px solid var(--hx-border);
   color: var(--hx-text);
 }
 
+/* ── Focus ring ── */
 .hx-focus:focus-visible {
-  outline: 3px solid color-mix(in oklab, var(--hx-accent), #fff 20%);
+  outline: 2.5px solid var(--hx-accent);
   outline-offset: 2px;
 }
+.hx-focus { outline: none; }
 
+/* ── Button reset ── */
+.hx-button {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+/* ── Input reset ── */
+.hx-input {
+  font-family: var(--hx-font-sans);
+  font-size: 14px;
+  display: block;
+}
+
+/* ── Grid dot bg ── */
 .hx-grid-bg {
   background-image:
-    linear-gradient(to right, color-mix(in oklab, var(--hx-border), transparent 70%) 1px, transparent 1px),
-    linear-gradient(to bottom, color-mix(in oklab, var(--hx-border), transparent 70%) 1px, transparent 1px);
+    linear-gradient(to right, color-mix(in oklab, var(--hx-border,#ddd), transparent 55%) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--hx-border,#ddd), transparent 55%) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* ── Scrollbar ── */
+.hx-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.hx-scroll::-webkit-scrollbar-track { background: transparent; }
+.hx-scroll::-webkit-scrollbar-thumb { background: var(--hx-border); border-radius: 99px; }
+
+/* ── Visually hidden ── */
+.hx-sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }

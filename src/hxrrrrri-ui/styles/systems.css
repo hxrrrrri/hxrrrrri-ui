@@ -1,36 +1,72 @@
+/* ═══════════════════════════════════════════════════════════════════
+   HXRRRRRI-UI · System Modifiers
+   Per-system shape, shadow, and surface overrides.
+   Applied via getSystemClass() on every component.
+═══════════════════════════════════════════════════════════════════ */
+
+/* ── Luxury — glassmorphism, inset highlights, blur ── */
 .hx-system-luxury {
-  backdrop-filter: blur(18px) saturate(140%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 18px 48px color-mix(in oklab, var(--hx-accent), transparent 74%);
-  border-radius: var(--hx-radius-lg);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255,255,255,0.22),
+    inset 0 -1px 0 rgba(0,0,0,0.12),
+    0 12px 40px color-mix(in oklab, var(--hx-accent,#FF6A3D), transparent 72%);
+  border-radius: var(--hx-radius-xl);
 }
 
+/* ── Minimal — flat, sharp, ink-on-paper ── */
 .hx-system-minimal {
   border-radius: 0;
   box-shadow: none;
+  backdrop-filter: none;
 }
 
+/* ── Brutalist — heavy borders, offset shadow ── */
 .hx-system-brutalist {
   border-radius: 0;
-  box-shadow: 8px 8px 0 #000;
-  border-width: 2px;
+  border-width: 2.5px !important;
+  box-shadow: 6px 6px 0 var(--hx-text,#000);
+  backdrop-filter: none;
 }
 
+/* ── Neo-Futuristic — neon glow, scan lines ── */
 .hx-system-neofuturistic {
   border-radius: var(--hx-radius-md);
-  box-shadow: 0 0 30px var(--hx-glow), inset 0 0 30px color-mix(in oklab, var(--hx-accent), transparent 87%);
+  box-shadow:
+    0 0 20px var(--hx-glow, rgba(0,232,255,0.35)),
+    inset 0 0 20px color-mix(in oklab, var(--hx-accent,#00E8FF), transparent 85%),
+    inset 0 1px 0 rgba(0,232,255,0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
+/* ── Enterprise — clean SaaS, subtle elevation ── */
 .hx-system-enterprise {
-  border-radius: 10px;
-  box-shadow: 0 12px 28px rgba(15, 35, 80, 0.08);
+  border-radius: var(--hx-radius-sm);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(15,35,80,0.06);
+  backdrop-filter: none;
 }
 
+/* ── Experimental — organic, asymmetric corners ── */
 .hx-system-experimental {
-  border-radius: 28px 8px 26px 12px;
-  box-shadow: 0 20px 50px color-mix(in oklab, var(--hx-accent-alt), transparent 72%);
+  border-radius: 24px 8px 22px 10px;
+  box-shadow: 0 16px 48px color-mix(in oklab, var(--hx-accent-alt,#3DFFD2), transparent 68%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
+/* ── A11y — high contrast, clear focus, no decoration ── */
 .hx-system-a11y {
-  border-radius: 8px;
-  border-width: 2px;
+  border-radius: var(--hx-radius-xs);
+  border-width: 2px !important;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+/* ── Luxury button extra sparkle ── */
+.hx-system-luxury.hx-button:hover {
+  box-shadow:
+    inset 0 1.5px 0 rgba(255,255,255,0.28),
+    0 16px 48px color-mix(in oklab, var(--hx-accent,#FF6A3D), transparent 60%);
 }

@@ -1,89 +1,145 @@
-# hxrrrrri-UI — Ultra Luxury Glass + Ultra Minimal
+# HXRRRRRI-UI
 
-A premium React component library by **Harisankar S (MR.K)** with two complete design systems.
+A production-grade React component library with **7 design systems** in one package.
 
-## Live Docs
-Deploy this repo to Vercel — it auto-detects as a Vite project.
+**[Live Docs →](https://hxrrrrri-ui.vercel.app)** &nbsp;|&nbsp; By [Harisankar S (MR.K)](https://github.com/hxrrrrri)
 
-## Two Systems
+---
 
-### 🖤 Luxury Glass (`lux-*`)
-Apple Vision Pro–grade glassmorphism. 5 glass tiers, inset highlights, ambient orbs, 10 live themes.
+## 7 Design Systems
 
-### ⬜ Ultra Minimal (`min-*`)
-Ink on paper. Zero gradients. Zero shadows. Swiss-grid precision.
+| System | ID | Philosophy |
+|--------|----|-----------|
+| ✦ Luxury | `luxury` | Glassmorphism, inset highlights, ambient glow |
+| ◻ Minimal | `minimal` | Ink on paper, flat, Swiss-grid typography |
+| ⬛ Brutalist | `brutalist` | Bold borders, offset shadows, raw energy |
+| ◈ Neo-Futuristic | `neofuturistic` | Neon glow, holographic surfaces, 3D |
+| ⊞ Enterprise | `enterprise` | Clean SaaS, data-heavy, subtle elevation |
+| ⬡ Experimental | `experimental` | Asymmetric, physics-based, unconventional |
+| ♿ A11y | `a11y` | WCAG 2.1 AA, high contrast, keyboard-first |
+
+---
+
+## Component Catalogue
+
+### Core
+`HxButton` · `HxCard` · `HxInput` · `HxTextarea` · `HxModal` · `HxDropdown` · `HxThemeSwitcher`
+
+### Advanced
+`HxCommandPalette` · `HxDragBoard` · `HxDataTable` · `HxTimeline` · `HxDashboardGrid` · `HxDashboardTile`
+
+### Motion
+`HxPageTransition` · `HxParallax` · `HxGesturePanel`
+
+### Immersive
+`HxFloatingOrbs` · `HxPerspectiveStage` · `HxWebGLShell`
+
+### A11y
+`HxAccessibleField`
+
+---
 
 ## Quick Start
 
-```bash
-# 1. Copy the CSS files into your project
-cp src/styles/tokens.css  your-project/src/styles/
-cp src/styles/luxury.css  your-project/src/styles/
-cp src/styles/minimal.css your-project/src/styles/
-cp src/lib/themes.js      your-project/src/lib/
+```tsx
+// 1. Import styles
+import 'hxrrrrri-ui/style.css'
 
-# 2. Import in your main.jsx / App.jsx
-import './styles/tokens.css'
-import './styles/luxury.css'   # for glass system
-import './styles/minimal.css'  # for minimal system
+// 2. Wrap in ThemeProvider
+import { ThemeProvider, HxButton, HxCard } from 'hxrrrrri-ui'
 
-# 3. Use class names directly
-<button className="lux-btn lux-btn-primary">Primary</button>
-<div className="lux-g2 lux-hi2 lux-shine">Glass Card</div>
-<button className="min-btn min-btn-primary">Minimal</button>
+export default function App() {
+  return (
+    <ThemeProvider>
+      <HxCard system="luxury" tilt accentBar>
+        <HxButton system="luxury" variant="primary">
+          Launch Project
+        </HxButton>
+      </HxCard>
+    </ThemeProvider>
+  )
+}
 ```
 
-## Theming
+## Switching Systems
 
-```js
-import { applyTheme, THEMES } from './lib/themes.js'
+Every component accepts a `system` prop. No theme context changes needed:
 
-// Apply any of the 10 luxury themes
-applyTheme('arctic')    // Glacial cyan · Polar violet
-applyTheme('aurum')     // Liquid gold · Vermillion lacquer
-applyTheme('obsidian')  // Burnt ember · Midnight indigo (default)
-
-// All 10: obsidian, arctic, emerald, aurum, sakura, amethyst, copper, pearl, crimson, ocean
+```tsx
+<HxButton system="luxury"        variant="primary">Luxury</HxButton>
+<HxButton system="minimal"       variant="primary">Minimal</HxButton>
+<HxButton system="brutalist"     variant="primary">Brutalist</HxButton>
+<HxButton system="neofuturistic" variant="neon">Neo-Futuristic</HxButton>
+<HxButton system="enterprise"    variant="primary">Enterprise</HxButton>
+<HxButton system="experimental"  variant="gradient">Experimental</HxButton>
+<HxButton system="a11y"          variant="primary">A11y</HxButton>
 ```
 
-## CSS Variable System (Luxury)
+## HxButton Variants
 
-Set these in `:root` to customise any theme:
-- `--hxrrrrri-a1` — Primary accent colour
-- `--hxrrrrri-ar / --hxrrrrri-ag / --hxrrrrri-ab` — Primary RGB components
-- `--hxrrrrri-a2` — Secondary accent colour  
-- `--hxrrrrri-br / --hxrrrrri-bg-c / --hxrrrrri-bb` — Secondary RGB components
-- `--hxrrrrri-bg-l1/l2/l3` — Background gradient layers
-- `--hxrrrrri-orb1/2/3` — Ambient orb colours
+`primary` · `secondary` · `ghost` · `outline` · `danger` · `success` · `warning` · `info` · `glass` · `neon` · `soft` · `elevated` · `link` · `chip` · `icon` · `ai` · `gradient` · `pill`
 
-## Component Classes
+## Key Component APIs
 
-### Luxury Glass
-`lux-g1/g2/g3/g4` · `lux-g-accent` · `lux-hi/hi2/hi3` · `lux-shine`  
-`lux-btn` + `lux-btn-primary/ghost/outline/sm/lg/icon`  
-`lux-input` · `lux-input-label` · `lux-toggle`  
-`lux-badge` + `lux-badge-accent/glass/success/warn/err`  
-`lux-stat` + `lux-stat-label/val/sub`  
-`lux-progress-track/fill` · `lux-avatar` + `lux-avatar-sm/md/lg`  
-`lux-loader-ring/dots/pulse/bar-wrap/bar-fill`  
-`lux-notif` + `lux-notif-info/success/warn/err`  
-`lux-navbar` · `lux-nav-logo/link/dot` · `lux-footer`  
-`lux-tag` · `lux-divider` · `lux-step-row/num` · `lux-orb`
+### HxButton
+```tsx
+<HxButton
+  system="luxury"
+  variant="primary"    // 18 variants
+  size="md"            // xs | sm | md | lg
+  loading={false}
+  disabled={false}
+  fullWidth={false}
+  icon={<Icon/>}
+  iconPosition="right" // left | right
+/>
+```
 
-### Ultra Minimal
-`min-btn` + `min-btn-primary/outline/ghost/sm/lg`  
-`min-card` + `min-card-sm/border-l/dark`  
-`min-input` · `min-label` · `min-toggle`  
-`min-badge` + `min-badge-dark/outline/accent/success/warn/err`  
-`min-stat` + `min-stat-label/val/sub`  
-`min-progress-track/fill` · `min-avatar` + `min-avatar-sm/md/lg/dark`  
-`min-loader-ring/dots/bar`  
-`min-notif` + `min-notif-success/warn/err/info`  
-`min-navbar` · `min-nav-logo/link` · `min-footer`  
-`min-tag` · `min-divider` · `min-step-row/num/done` · `min-table`
+### HxCard
+```tsx
+<HxCard
+  system="luxury"
+  tilt={true}          // 3D tilt on hover
+  accentBar={true}     // gradient top bar
+  hover={true}         // lift on hover
+  padding="md"         // none | sm | md | lg
+/>
+```
 
-## License
-MIT — use freely, credit appreciated.
+### HxDataTable (virtualised — handles 200k+ rows)
+```tsx
+<HxDataTable
+  system="enterprise"
+  columns={[{ key: 'name', title: 'Name', width: 180 }]}
+  rows={rows}
+  viewportHeight={380}
+  striped={true}
+  searchable={true}
+/>
+```
+
+### HxCommandPalette (⌘K)
+```tsx
+<HxCommandPalette
+  open={open}
+  onOpenChange={setOpen}
+  system="luxury"
+  items={[{ id: '1', title: 'Deploy', icon: '▲', kbd: '⌘D', onSelect: () => {} }]}
+/>
+```
 
 ---
-Built by [Harisankar S](https://github.com/hxrrrrri) · [portfolio-glass](https://github.com/hxrrrrri/portfolio-glass)
+
+## Deploy
+
+```bash
+git clone https://github.com/hxrrrrri/hxrrrrri-ui
+cd hxrrrrri-ui
+npm install && npm run dev
+```
+
+Import to Vercel → Framework: Vite → Deploy.
+
+---
+
+MIT License · Built by [Harisankar S (MR.K)](https://github.com/hxrrrrri)

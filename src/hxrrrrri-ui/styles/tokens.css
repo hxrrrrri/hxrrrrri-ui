@@ -1,8 +1,47 @@
+/* ═══════════════════════════════════════════════════════════════════
+   HXRRRRRI-UI · Design Tokens
+   Global radius, shadow, motion, and spacing scale.
+   System-specific colours are injected via useTheme() at component level.
+═══════════════════════════════════════════════════════════════════ */
 :root {
-  --hx-radius-sm: 8px;
-  --hx-radius-md: 14px;
-  --hx-radius-lg: 22px;
-  --hx-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.14);
-  --hx-shadow-strong: 0 24px 70px rgba(0, 0, 0, 0.26);
-  --hx-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* ── Radius ── */
+  --hx-radius-xs:  6px;
+  --hx-radius-sm:  10px;
+  --hx-radius-md:  14px;
+  --hx-radius-lg:  20px;
+  --hx-radius-xl:  28px;
+  --hx-radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --hx-shadow-xs:   0 2px 8px rgba(0,0,0,0.08);
+  --hx-shadow-soft: 0 8px 32px rgba(0,0,0,0.12);
+  --hx-shadow-md:   0 16px 48px rgba(0,0,0,0.18);
+  --hx-shadow-strong: 0 24px 72px rgba(0,0,0,0.28);
+
+  /* ── Spacing ── */
+  --hx-space-1: 4px;
+  --hx-space-2: 8px;
+  --hx-space-3: 12px;
+  --hx-space-4: 16px;
+  --hx-space-5: 20px;
+  --hx-space-6: 24px;
+  --hx-space-8: 32px;
+
+  /* ── Motion ── */
+  --hx-ease:        cubic-bezier(0.22, 1, 0.36, 1);
+  --hx-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --hx-dur-fast:    140ms;
+  --hx-dur-base:    220ms;
+  --hx-dur-slow:    380ms;
+
+  /* ── Typography ── */
+  --hx-font-sans: 'Inter', system-ui, sans-serif;
+  --hx-font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+
+  /* ── Z-index ── */
+  --hx-z-dropdown: 30;
+  --hx-z-modal:    60;
+  --hx-z-toast:    80;
+  --hx-z-command:  90;
+  --hx-z-orbs:     -1;
 }
