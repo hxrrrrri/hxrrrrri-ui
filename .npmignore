@@ -1,0 +1,14 @@
+# Source and local docs (package uses dist via package.json files)
+src/
+docs/
+
+# Dev/build/editor files
+.vscode/
+.vercel/
+node_modules/
+
+# Local artifacts and logs
+*.log
+.DS_Store
+.env
+.env.*

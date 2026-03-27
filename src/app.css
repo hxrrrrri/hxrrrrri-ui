@@ -119,6 +119,20 @@ body {
 @media (max-width: 768px) {
   .docs-grid-2,.docs-grid-3,.docs-grid-4 { grid-template-columns: 1fr; }
   .docs-links { display: none; }
+  .theme-dropdown { width: min(92vw, 296px); right: 0; }
+  .docs-page { padding: clamp(24px,4.5vw,40px) clamp(14px,4vw,24px); }
+  .min-page-content { padding: clamp(24px,4.5vw,40px) clamp(14px,4vw,24px); }
+}
+
+@media (max-width: 640px) {
+  .docs-nav { height: 58px; }
+  .docs-nav-inner { padding: 0 12px; gap: 6px; }
+  .docs-logo { font-size: 16px; margin-right: 8px; }
+  .docs-nav-right { gap: 6px; }
+  .theme-trigger { padding: 4px 8px 4px 5px; }
+  .theme-trigger-name { display: none; }
+  .docs-gh { width: 34px; height: 34px; }
+  .theme-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Code blocks ── */

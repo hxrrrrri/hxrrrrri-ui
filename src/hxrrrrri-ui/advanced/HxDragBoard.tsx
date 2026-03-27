@@ -73,7 +73,7 @@ export function HxDragBoard({ lanes, items: initial, onChange, system = 'enterpr
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 draggable
-                onDragStart={e => { e.dataTransfer.setData('text/plain', item.id); setDragging(item.id) }}
+                onDragStart={(e: any) => { e.dataTransfer.setData('text/plain', item.id); setDragging(item.id) }}
                 onDragEnd={() => setDragging(null)}
                 whileHover={{ y: -2 }}
                 style={{

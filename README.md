@@ -64,6 +64,29 @@ git clone https://github.com/hxrrrrri/hxrrrrri-ui
 cd hxrrrrri-ui && npm install && npm run dev
 ```
 
+## Install In Another React App
+
+```bash
+# npm registry (after publish)
+npm install hxrrrrri-ui framer-motion
+
+# OR directly from GitHub
+npm install github:hxrrrrri/hxrrrrri-ui
+```
+
+```tsx
+import 'hxrrrrri-ui/style.css'
+import { ThemeProvider, HxButton } from 'hxrrrrri-ui'
+
+export function Demo() {
+  return (
+    <ThemeProvider>
+      <HxButton system="luxury" variant="gradient">Launch</HxButton>
+    </ThemeProvider>
+  )
+}
+```
+
 ```tsx
 // 1. Import styles (once, in main.tsx)
 import 'hxrrrrri-ui/style.css'
@@ -146,6 +169,34 @@ git remote add origin https://github.com/hxrrrrri/hxrrrrri-ui
 git push -u origin main
 # Import to vercel.com/new → Vite auto-detected → Deploy
 ```
+
+---
+
+## Publish To npm (Maintainer)
+
+### First publish
+
+```bash
+npm login
+npm whoami
+npm run release:check
+npm publish --access public
+```
+
+### Publish updates
+
+```bash
+# choose one
+npm run release:patch
+npm run release:minor
+npm run release:major
+
+npm run release:check
+npm publish --access public
+git push origin HEAD --follow-tags
+```
+
+For complete release notes and troubleshooting, see docs/PUBLISHING.md.
 
 ---
 

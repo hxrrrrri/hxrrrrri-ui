@@ -62,23 +62,27 @@ export default function LandingPage() {
         <div className="lux-text-label" style={{marginBottom:'22px'}}>Quick Start</div>
         <div className="docs-grid-2">
           <div>
-            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>1. Copy the CSS files into your project</div>
+            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>1. Install with npm (or npm + npx project init)</div>
             <div className="docs-code">
-              <span className="c"># Copy styles to your src/styles/</span>{'\n'}
-              <span className="k">tokens.css</span> <span className="c">← design tokens{'\n'}</span>
-              <span className="k">luxury.css</span> <span className="c">← luxury glass system{'\n'}</span>
-              <span className="k">minimal.css</span> <span className="c">← minimal system</span>
+              <span className="c"># If you need a fresh app</span>{'\n'}
+              <span className="k">npx</span> <span className="s">create-vite@latest my-app -- --template react</span>{'\n'}
+              <span className="k">cd</span> <span className="s">my-app</span>{'\n\n'}
+              <span className="c"># Install HXRRRRRI UI + motion engine</span>{'\n'}
+              <span className="k">npm</span> <span className="s">install hxrrrrri-ui framer-motion</span>{'\n\n'}
+              <span className="c"># If package is private, use GitHub source</span>{'\n'}
+              <span className="k">npm</span> <span className="s">install github:hxrrrrri/hxrrrrri-ui</span>
             </div>
           </div>
           <div>
-            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>2. Import and use</div>
+            <div style={{fontSize:'14px',fontWeight:700,color:'rgba(255,255,255,0.75)',marginBottom:'10px'}}>2. Import and use in your page</div>
             <div className="docs-code">
-              <span className="k">import</span> <span className="s">'./styles/tokens.css'</span>{'\n'}
-              <span className="k">import</span> <span className="s">'./styles/luxury.css'</span>{'\n'}{'\n'}
-              <span className="c">// Then use class names in JSX</span>{'\n'}
-              <span className="s">&lt;button</span> <span className="k">className</span>=<span className="v">"lux-btn lux-btn-primary"</span><span className="s">&gt;</span>{'\n'}
-              {'  '}<span className="s">Get Started</span>{'\n'}
-              <span className="s">&lt;/button&gt;</span>
+              <span className="k">import</span> {'{ '}<span className="v">ThemeProvider, HxButton, HxCard</span>{' }'} <span className="k">from</span> <span className="s">'hxrrrrri-ui'</span>{'\n'}
+              <span className="k">import</span> <span className="s">'hxrrrrri-ui/style.css'</span>{'\n\n'}
+              <span className="s">&lt;ThemeProvider&gt;</span>{'\n'}
+              {'  '}<span className="s">&lt;HxCard system="luxury" tilt&gt;</span>{'\n'}
+              {'    '}<span className="s">&lt;HxButton system="luxury" variant="gradient"&gt;Launch&lt;/HxButton&gt;</span>{'\n'}
+              {'  '}<span className="s">&lt;/HxCard&gt;</span>{'\n'}
+              <span className="s">&lt;/ThemeProvider&gt;</span>
             </div>
           </div>
         </div>

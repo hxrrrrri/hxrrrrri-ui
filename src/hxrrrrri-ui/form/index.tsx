@@ -474,7 +474,7 @@ export function HxPinInput({ length=4, value, onChange, onComplete, mask, disabl
   return (
     <div className="hx-root" style={{ ...themeVars as React.CSSProperties, display:'flex', gap:10 }}>
       {Array.from({ length }).map((_,i) => (
-        <input key={i} ref={el => (refs.current[i] = el)} type={mask?'password':'text'} inputMode="numeric" maxLength={1} disabled={disabled} value={current[i]??''} onChange={e => handleChange(i, e.target.value)} onKeyDown={e => handleKey(i, e)}
+        <input key={i} ref={el => { refs.current[i] = el }} type={mask?'password':'text'} inputMode="numeric" maxLength={1} disabled={disabled} value={current[i]??''} onChange={e => handleChange(i, e.target.value)} onKeyDown={e => handleKey(i, e)}
           onFocus={e => (e.currentTarget as HTMLInputElement).select()}
           style={{ width:48, height:56, textAlign:'center', fontSize:22, fontWeight:700, borderRadius:system==='minimal'?0:10, border:`2px solid ${current[i]?'var(--hx-accent)':'var(--hx-border)'}`, background:'var(--hx-surface)', color:'var(--hx-text)', outline:'none', fontFamily:'var(--hx-font-sans)', transition:'border-color 150ms', caretColor:'var(--hx-accent)' }}
         />
