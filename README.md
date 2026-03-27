@@ -72,6 +72,9 @@ npm install hxrrrrri-ui framer-motion
 
 # OR directly from GitHub
 npm install github:hxrrrrri/hxrrrrri-ui
+
+# OR from GitHub Packages
+npm install @hxrrrrri/hxrrrrri-ui --registry=https://npm.pkg.github.com
 ```
 
 ```tsx

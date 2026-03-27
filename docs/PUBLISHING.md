@@ -80,6 +80,19 @@ GitHub install:
 npm install github:hxrrrrri/hxrrrrri-ui
 ```
 
+GitHub Packages install:
+
+```bash
+npm install @hxrrrrri/hxrrrrri-ui --registry=https://npm.pkg.github.com
+```
+
+## 5.1) Publish to GitHub Packages
+
+Use workflow `Manual GitHub Packages Publish` from the Actions tab.
+
+- It publishes the package as `@hxrrrrri/hxrrrrri-ui` to GitHub Packages.
+- It does not affect npmjs `hxrrrrri-ui` publishing.
+
 ## 6) Consumer usage
 
 ```tsx

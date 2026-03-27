@@ -1,0 +1,58 @@
+name: Manual GitHub Packages Publish
+
+on:
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Guard main/master branch
+        run: |
+          if [ "${GITHUB_REF_NAME}" != "main" ] && [ "${GITHUB_REF_NAME}" != "master" ]; then
+            echo "Publish is allowed only from main or master. Current: ${GITHUB_REF_NAME}"
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js for GitHub Packages
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          registry-url: https://npm.pkg.github.com
+          scope: '@hxrrrrri'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build library
+        run: npm run build:lib
+
+      - name: Create GitHub Packages publish workspace
+        run: |
+          mkdir -p .gpr-publish
+          cp -r dist .gpr-publish/dist
+          cp README.md .gpr-publish/README.md
+          cp package.json .gpr-publish/package.json
+
+      - name: Rewrite package name for GitHub Packages
+        working-directory: .gpr-publish
+        run: |
+          node -e "const fs=require('fs');const p='package.json';const pkg=JSON.parse(fs.readFileSync(p,'utf8'));pkg.name='@hxrrrrri/hxrrrrri-ui';pkg.publishConfig={registry:'https://npm.pkg.github.com'};delete pkg.scripts;delete pkg.devDependencies;fs.writeFileSync(p,JSON.stringify(pkg,null,2));"
+
+      - name: Publish to GitHub Packages
+        working-directory: .gpr-publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
