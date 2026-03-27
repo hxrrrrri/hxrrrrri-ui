@@ -1,0 +1,8 @@
+:root {
+  --hx-radius-sm: 8px;
+  --hx-radius-md: 14px;
+  --hx-radius-lg: 22px;
+  --hx-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.14);
+  --hx-shadow-strong: 0 24px 70px rgba(0, 0, 0, 0.26);
+  --hx-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

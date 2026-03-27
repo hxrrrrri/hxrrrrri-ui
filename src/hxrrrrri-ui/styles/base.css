@@ -1,0 +1,23 @@
+.hx-root {
+  font-family: 'Space Grotesk', 'Sora', system-ui, sans-serif;
+  color: var(--hx-text);
+  background: var(--hx-bg);
+}
+
+.hx-surface {
+  background: var(--hx-surface);
+  border: 1px solid var(--hx-border);
+  color: var(--hx-text);
+}
+
+.hx-focus:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--hx-accent), #fff 20%);
+  outline-offset: 2px;
+}
+
+.hx-grid-bg {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--hx-border), transparent 70%) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--hx-border), transparent 70%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
