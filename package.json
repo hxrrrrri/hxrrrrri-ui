@@ -1,0 +1,20 @@
+{
+  "name": "mrk-ui",
+  "version": "1.0.0",
+  "description": "Ultra Luxury Glass + Ultra Minimal React component library by Harisankar S (MR.K)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.3.5"
+  }
+}
